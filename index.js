@@ -56,15 +56,17 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  if (cart.includes(item) === false) {
+    return "That item is not in your cart."
+  }
+  
   for (var x = 0; x < cart.length; x++) {
     if (item === cart[x].itemName) {
       cart.splice(x, 1);
     }
   }
 
-  if (cart.includes(item) === false) {
-    return "That item is not in your cart."
-  }
+  
   return cart;
 }
 
