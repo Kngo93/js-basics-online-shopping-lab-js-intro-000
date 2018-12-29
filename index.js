@@ -56,7 +56,7 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  if (cart.itemName.includes(item) === false) {
+  if (cart.includes(item) === false) {
     return "That item is not in your cart."
   }
 
