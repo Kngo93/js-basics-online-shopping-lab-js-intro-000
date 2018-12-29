@@ -66,7 +66,7 @@ function removeFromCart(item) {
   if (cart.includes(item) === false) {
     return "That item is not in your cart.";
   }
-  
+
   return cart;
 }
 
